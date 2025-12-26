@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>This is my Public Page...</h1>
+<h1>This is my MemberShip Only Page....</h1>
 <br><br>
 </body>
 </html>

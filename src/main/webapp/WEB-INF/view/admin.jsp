@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>This is my Public Page...</h1>
+<h1>This is only and only for the Admin.......</h1>
 <br><br>
 </body>
 </html>
