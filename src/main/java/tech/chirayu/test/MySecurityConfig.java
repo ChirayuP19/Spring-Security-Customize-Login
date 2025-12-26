@@ -33,10 +33,9 @@ public class MySecurityConfig {
 		.loginProcessingUrl("/dologin")
 		.usernameParameter("user")
 		.passwordParameter("pass")
-		
-		
-		
-		
+		.and()
+		.exceptionHandling()
+		.accessDeniedPage("/test/unauthorized")
 		;
 		
 		DefaultSecurityFilterChain defaultSecurityFilterChain = http.build();

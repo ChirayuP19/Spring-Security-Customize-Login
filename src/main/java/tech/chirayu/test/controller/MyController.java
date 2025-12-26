@@ -28,4 +28,8 @@ public class MyController {
 		return "login";
 	}
 	
+	@GetMapping("/unauthorized")
+	public String unauthorized() {
+		return "unauthorized";
+	}
 }
