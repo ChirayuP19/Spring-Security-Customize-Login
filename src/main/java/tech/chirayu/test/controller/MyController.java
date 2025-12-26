@@ -11,7 +11,7 @@ public class MyController {
 	@GetMapping("/index")
 	public String index() {
 		return "index";
-	}
+	} 
 
 	@GetMapping("/member")
 	public String member() {
@@ -22,4 +22,10 @@ public class MyController {
 	public String admin() {
 		return "admin";
 	}
+	
+	@GetMapping("/mylogin")
+	public String loginpage() {
+		return "login";
+	}
+	
 }
