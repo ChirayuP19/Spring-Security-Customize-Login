@@ -43,25 +43,26 @@ public class MySecurityConfig {
 
 	}
 	
-	@Bean
-	InMemoryUserDetailsManager inMemory() {
-		
-		UserDetails adminDetails = org.springframework.security.core.userdetails.User.builder()
-		.username("admin")
-		.password(passwordEncoder().encode("admin123"))
-		.roles("ADMIN")
-		.build();
-		
-		
-		UserDetails memberDetails = org.springframework.security.core.userdetails.User.builder()
-		.username("member")
-		.password(passwordEncoder().encode("member123"))
-		.roles("MEMBER")
-		.build();
-		
-		return new InMemoryUserDetailsManager(adminDetails,memberDetails);
-		
-	}
+//	@Bean this is a method is In mempoery satic method to do process. 
+//	InMemoryUserDetailsManager inMemory() {
+//		
+//		UserDetails adminDetails = org.springframework.security.core.userdetails.User.builder()
+//		.username("admin")
+//		.password(passwordEncoder().encode("admin123"))
+//		.roles("ADMIN")
+//		.build();
+//		
+//		
+//		UserDetails memberDetails = org.springframework.security.core.userdetails.User.builder()
+//		.username("member")
+//		.password(passwordEncoder().encode("member123"))
+//		.roles("MEMBER")
+//		.build();
+//		
+//		return new InMemoryUserDetailsManager(adminDetails,memberDetails);
+//		
+//	}
+	
 	@Bean
 	PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
